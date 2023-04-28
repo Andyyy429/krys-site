@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --darkb: #04040a;
+    --whiteb: #f6f9ff;
+}
+
+body {
+    background-color: var(--darkb);
+    color: var(--whiteb);
+}
+
