@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Jost');
+
+
 * {
     box-sizing: border-box;
 }
@@ -5,10 +8,30 @@
 :root {
     --darkb: #04040a;
     --whiteb: #f6f9ff;
+    --pblue: #6bbcdb;
 }
 
 body {
     background-color: var(--darkb);
     color: var(--whiteb);
+    font-family: 'Jost', sans-serif;
+}
+
+h1 {
+    font-family: 'Germania One', cursive;
+    color:var(--pblue);
+    font-size: 8vw;
+}
+
+div a img {
+    height: 10em;
+}
+div a {
+    font-family: 'Germania One', cursive;;
+}
+
+.main_catagory {
+    display: inline-block;
+    border: 3px blue solid;
 }
 
