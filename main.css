@@ -3,16 +3,16 @@
 
 * {
     box-sizing: border-box;
+
 }
 
 :root {
-    --darkb: #04040a;
+    --darkb: #0a0a1a;
     --whiteb: #f6f9ff;
-    --pblue: #6bbcdb;
+    --pblue: #69b3d1;
 }
 
 body {
-    background-color: var(--darkb);
     color: var(--whiteb);
     font-family: 'Jost', sans-serif;
 }
@@ -23,15 +23,84 @@ h1 {
     font-size: 8vw;
 }
 
-div a img {
-    height: 10em;
+nav a {
+    font-family: 'Germania One', cursive;
+    color: var(--pblue);
+    font-size: 3vw;
+    text-decoration: none;
+    margin: 5px 5px;
+    letter-spacing: 1px;
+    white-space:nowrap;
+    text-align: center;
 }
-div a {
-    font-family: 'Germania One', cursive;;
+
+nav {
+    background-color: var(--darkb);
+    display: grid;
+    grid-template-columns: auto 2fr 1fr;
+    column-gap: 10px;
+}
+i, nav div > span{
+    color: var(--whiteb);
+}
+
+.searchGroup {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+   }
+   
+   .searchBar {
+    width: 100%;
+    height: 35px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .searchBar::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .searchBar:focus, input:hover {
+    outline: none;
+    border-color: rgba(234,76,137,0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+   
+.searchIcon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    color: var(--darkb);
+    width: 1rem;
+    height: 1rem;
+}
+.searchIcon:hover{
+    cursor: pointer;
+}
+
+header {
+    text-align: center;
 }
 
 .main_catagory {
     display: inline-block;
     border: 3px blue solid;
 }
-
+.navIcons {
+    display: flex;
+    align-items: center;
+    font-size: 2vw;
+    justify-content: right;
+    padding-right: 10%;
+    justify-content: space-evenly;
+}
