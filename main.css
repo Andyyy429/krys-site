@@ -3,12 +3,11 @@
 
 * {
     box-sizing: border-box;
-
 }
 
 :root {
     --darkb: #0a0a1a;
-    --whiteb: #f6f9ff;
+    --whiteb: #f4f7fc;
     --pblue: #69b3d1;
 }
 
@@ -90,6 +89,30 @@ i, nav div > span{
 
 header {
     text-align: center;
+    height: 500px;
+}
+#main_video{
+    width: 100%; 
+    min-height: 500px;
+    max-height:500px;
+    object-fit: cover;
+    position: relative;
+    right: 0;
+    bottom: 0;
+}
+
+#main_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--whiteb);
+} 
+#main_text h1{
+    font-size: 7vw;
+}
+#main_text p{
+    font-size:2vw;
 }
 
 .main_catagory {
