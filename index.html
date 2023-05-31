@@ -37,13 +37,20 @@
         </div>
     </header>
     <section id="catagory">
-        <h3 id="catagory_text">CATAGORIES</h3>
-            <div class="main_catagory">Catagory 1</div>
-            <div class="main_catagory">Catagory 1</div>
-            <div class="main_catagory">Catagory 1</div>
-            <div class="main_catagory">Catagory 1</div>
-            <div class="main_catagory">Catagory 1</div>
-            <div class="main_catagory">Catagory 1</div>
+        <div class="catagory_dropdown">
+            <button class="dropdown-btn" onclick="showCatagories()">
+              <span>CATAGORIES</span>
+            </button>
+            <ul class="dropdown-content">
+              <li><a href="#">Catagory 1</a></li>
+              <li><a href="#">Catagory 1</a></li>
+              <li><a href="#">Catagory 1</a></li>
+              <li><a href="#">Catagory 1</a></li>
+              <li><a href="#">Catagory 1</a></li>
+              <li><a href="#">Catagory 1</a></li>
+              <li><a href="#">Catagory 1</a></li>
+            </ul>
+          </div>
     </section>
     <section id="creations">
         <h2 id="creations_text">New Creations</h2>
@@ -103,10 +110,10 @@
         <div id="main_footer">
             <div id="socials">
                 <a href="#">
-                    <i class="fa-brands fa-instagram fa-xl"></i>
+                    <i class="fa-brands fa-instagram fa-xl"><p class="social_text">creationsbyk.tt</p></i>
                 </a>
                 <a href="#">
-                    <i class="fa-brands fa-facebook-f fa-xl"></i>
+                    <i class="fa-brands fa-facebook-f fa-xl"><p class="social_text">K's Creations</p></i>
                 </a>
             </div>
             <div id="foot_title">
@@ -126,5 +133,5 @@
         <p>Designed and Built by Andy</p>
     </footer>
 </body>
-
+<script src="main.js"></script>
 </html>
