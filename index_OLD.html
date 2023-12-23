@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en=TT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K's Creations</title>
+    <meta name="description"
+        content="The one place for handmade glass paintings and sculptures of your favourite characters.">
+    <link rel="icon" type="image/x-icon" href="media/logo_trans 1.png">
+    <script src="https://kit.fontawesome.com/31407956fb.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="main_OLD.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">K's CREATIONS</a>
+        <div class="searchGroup">
+            <i class="fa-solid fa-magnifying-glass searchIcon"></i>  
+            <input type="search" placeholder="Search" class="searchBar">
+        </div>
+        <div class="navIcons">
+            <i class="fa-solid fa-circle-user"></i>
+            <span>Login</span>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </nav>
+    <header>
+        <video autoplay muted loop id="main_video">
+            <source src="media/statueH.mp4" type="video/mp4">
+        </video>
+        <div id="main_text">
+            <h1>Welcome to K's Creations</h1>
+            <p>The #1 place for handmade glass paintings and sculptures of your favourite characters.</p>
+        </div>
+    </header>
+    <section id="catagory">
+        <div class="catagory_dropdown">
+            <button class="dropdown-btn" onclick="showCatagories()">
+              <span>CATAGORIES</span>
+            </button>
+            <ul class="dropdown-content">
+              <li><a href="#">Catagory 1</a></li>
+              <li><a href="#">Catagory 1</a></li>
+              <li><a href="#">Catagory 1</a></li>
+              <li><a href="#">Catagory 1</a></li>
+              <li><a href="#">Catagory 1</a></li>
+              <li><a href="#">Catagory 1</a></li>
+              <li><a href="#">Catagory 1</a></li>
+            </ul>
+          </div>
+    </section>
+    <section id="creations">
+        <h2 id="creations_text">New Creations</h2>
+        <hr>
+        <div id="main_creations"> 
+            <div class="new_creation">
+                <img src="media/candy.jpg">
+                <p>Creation x</p>
+            </div>
+            <div class="new_creation">
+                <img src="media/scissors.jpg">
+                <p>Creation x</p>
+            </div>
+            <div class="new_creation">
+                <img src="media/shells.jpg">
+                <p>Creation x</p>
+            </div>
+            <div class="new_creation">
+                <img src="media/candy.jpg">
+                <p>Creation x</p>
+            </div>
+            <div class="new_creation">
+                <img src="media/scissors.jpg">
+                <p>Creation x</p>
+            </div>
+            <div class="new_creation">
+                <img src="media/shells.jpg">
+                <p>Creation x</p>
+            </div>
+            <div class="new_creation">
+                <img src="media/candy.jpg">
+                <p>Creation x</p>
+            </div>
+            <div class="new_creation">
+                <img src="media/scissors.jpg">
+                <p>Creation x</p>
+            </div>
+            <div class="new_creation">
+                <img src="media/shells.jpg">
+                <p>Creation x</p>
+            </div>
+        </div>
+    </section>
+    <section id="newsletter">
+        <h3 id="newsletter_head">JOIN OUR NEWSLETTER</h3>
+        <div class="nl-group">
+            <p id="newsletter_text">Be the first to know about new creations and specials.</p>
+            <div id="emailGroup">
+                <input type="email" class="newsEmail" id="nl_email" name="Email" placeholder="name@email.com" autocomplete="on">
+                <input type="submit" class="newsSubmit" value="Subscribe"> 
+            </div> 
+        </div>
+    </section>
+    
+    <footer>
+        <hr/>
+        <div id="main_footer">
+            <div id="socials">
+                <a href="#">
+                    <i class="fa-brands fa-instagram fa-xl"><p class="social_text">creationsbyk.tt</p></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f fa-xl"><p class="social_text">K's Creations</p></i>
+                </a>
+            </div>
+            <div id="foot_title">
+                <h2>K's Creations<h2>
+            </div>
+            <div id="c_service">
+                <ul>
+                    <li>
+                        <a>Contact Us</a>
+                    </li>
+                    <li>
+                        <a>About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p>Designed and Built by Andy</p>
+    </footer>
+</body>
+<script src="main_OLD.js"></script>
+</html>
