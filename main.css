@@ -15,6 +15,7 @@ body {
     font-family: 'Jost', sans-serif;
 }
 
+/* NAVIGATION BAR */
 nav {
     display: grid;
     grid-template-columns: 1fr;
@@ -102,3 +103,138 @@ nav {
         font-size: 3.5vw;
     }
 }
+
+/* HEADER */
+header {
+    height: max-content;
+    text-align: center;
+    display: flex;
+}
+
+@media screen and (min-width: 1000px) {
+    header {
+        height: 40vw;
+    }
+    #main_video {
+        width: 100%; 
+        height: 40vw;
+        object-fit: cover;
+        position: relative;
+        align-self: normal;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+
+#main_video {
+    position: relative;
+    object-fit: cover;
+    align-self: center;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1;
+}
+
+#main_text {
+    position: absolute;
+    align-self: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: var(--bwhite);
+}
+
+#main_text h1{
+    font-size: 6vw;
+    font-family: 'Germania One', cursive;
+}
+#main_text p{
+    font-size: 3vw;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+    #main_text p {
+        display: none;
+    } 
+    #main_text h1 {
+        font-size: 9vw;
+    }
+    .dropdown-content {
+        display: block;
+    }
+}
+
+/* CATAGORIES */
+#catagory {
+    background-color: var(--dblue);
+    margin: 0px;
+    height: fit-content;
+    text-align: center;
+    padding: 10px;
+}
+
+.catagory_dropdown {
+    margin: 20px auto;
+    position: relative;
+    width: 95%;
+}
+
+.dropdown-btn {
+    background: #1d1f24;
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5em;
+    cursor: pointer;
+    justify-content:center;
+    color: var(--bwhite);
+}
+  
+  .dropdown-content {
+    list-style-type: none;
+    position: relative;
+    width: 100%;
+    padding-left:0px;
+}
+
+  .dropdown-content li {
+    background: #2f3238;
+    border-radius: 0.5em;   
+    padding: 0.7em 0.1em;
+    margin: 0.2em 0; 
+    
+  
+}
+
+  .dropdown-content li:hover {
+    background: #1d1f24;
+}
+
+  .dropdown-content li a {
+    padding: 0.7em 0.5em;
+    color: #fff;
+    margin: 0.4em 0;
+    text-decoration: none;
+}
+@media screen and (min-width: 600px) {
+    .dropdown-content {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+    .dropdown-content li {
+        width: 33%;
+    }
+}
+
+
+

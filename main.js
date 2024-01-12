@@ -66,3 +66,23 @@ async function showAllProducts(){
 
 showAllProducts();
 
+let dropcat = document.querySelector(".dropdown-content");
+function showCatagories() {
+    if (dropcat.style.display === "none" && screen.width < 600) {
+        dropcat.style.display = "block";
+    }
+    else if (dropcat.style.display === "none" && screen.width > 600){
+        dropcat.style.display = "inline-flex";
+    }
+    else {
+        dropcat.style.display = "none";
+    }
+};
+
+window.onload = hideCatagories ();
+function hideCatagories () {
+    if (dropcat.style.display === "block" ||"inline-flex") {
+        dropcat.style.display = "none";
+    }
+}
+

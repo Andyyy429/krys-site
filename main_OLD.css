@@ -138,8 +138,9 @@ header {
     margin: 20px auto;
     position: relative;
     width: 95%;
-  }
-  .dropdown-btn {
+}
+
+.dropdown-btn {
     background: #1d1f24;
     font-size: 20px;
     width: 100%;
@@ -150,7 +151,7 @@ header {
     border-radius: 0.5em;
     cursor: pointer;
     justify-content:center;
-  }
+}
   
   .dropdown-content {
     list-style-type: none;
@@ -159,21 +160,21 @@ header {
     padding-left:0px;
     display: none;
 
-  }
+}
   .dropdown-content li {
     background: #2f3238;
     border-radius: 0.5em;   
-  }
+}
   .dropdown-content li:hover {
     background: #1d1f24;
-  }
+}
   .dropdown-content li a {
     display: block;
     padding: 0.7em 0.5em;
     color: #fff;
     margin: 0.1em 0;
     text-decoration: none;
-  }
+}
 
 
 #creations {
